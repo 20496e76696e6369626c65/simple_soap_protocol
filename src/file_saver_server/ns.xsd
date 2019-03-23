@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <schema targetNamespace="urn:FileSaver"
+    xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:ns="urn:FileSaver"
+    xmlns="http://www.w3.org/2001/XMLSchema"
+    elementFormDefault="unqualified"
+    attributeFormDefault="unqualified">
+    <import namespace="http://schemas.xmlsoap.org/soap/encoding/"/>
+    <simpleType name="ErrorCode"><!-- ns__ErrorCode -->
+      <restriction base="xsd:QName">
+        <!-- = 0 -->
+        <enumeration value="ns:NO-ERROR"/><!-- ns__NO_ERROR -->
+        <!-- = 1 -->
+        <enumeration value="ns:COULD-NOT-OPEN-FILE"/><!-- ns__COULD_NOT_OPEN_FILE -->
+        <!-- = 2 -->
+        <enumeration value="ns:COULD-NOT-SAVE-FILE"/><!-- ns__COULD_NOT_SAVE_FILE -->
+        <!-- = 3 -->
+        <enumeration value="ns:COULD-NOT-LOAD-FILE"/><!-- ns__COULD_NOT_LOAD_FILE -->
+      </restriction>
+    </simpleType>
+  </schema>
+
